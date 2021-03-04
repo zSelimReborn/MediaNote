@@ -10,7 +10,7 @@
     <string name="mic_string">Microphone</string>
 
     <string name="search_note_hint">Cerca…</string>
-    <string name="no_notes_available">Il silenzio è d\'oro…</string>
+    <string name="no_notes_available">Il silenzio è d\'oro…\nProva uno dei bottoni qui sotto</string>
     <string name="menu_new_img_note">Immagine</string>
     <string name="menu_new_audio_note">Audio</string>
     <string name="new_note_title_input_hint">Titolo Nota…</string>
@@ -30,4 +30,6 @@
     <string name="on_beginning_speech_text">In ascolto…</string>
     <string name="on_press_speech_text">Ora puoi parlare</string>
     <string name="no_image_permissions_granted">Devi abilitare tutti i permessi richiesti.</string>
+    <string name="delete_all_notes_label">Rimuovi tutto</string>
+    <string name="deleted_notes_message">Rimosse %1$d note</string>
 </resources>

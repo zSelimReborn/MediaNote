@@ -28,4 +28,8 @@ class NoteViewModel(app: Application) : AndroidViewModel(app) {
     fun getNoteById(id: Int): LiveData<Note> {
         return repository.getById(id)
     }
+
+    fun deleteAllNotes(afterDelete: (Int) -> Unit) {
+        return repository.deleteAllNotes(afterDelete)
+    }
 }

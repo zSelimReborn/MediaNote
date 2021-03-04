@@ -4,7 +4,7 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/medium_orange</item>
         <item name="colorPrimaryVariant">@color/primary_orange</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/light_black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/primary_blue</item>
         <item name="colorSecondaryVariant">@color/medium_blue</item>
@@ -28,6 +28,10 @@
 
     <style name="Theme.MediaNote.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
         <item name="menu">@color/light_black</item>
+    </style>
+
+    <style name="Theme.MediaNote.BottomAppBar" parent="@style/Widget.MaterialComponents.BottomAppBar.Colored" >
+        <item name="actionMenuTextColor">@color/light_black</item>
     </style>
 
     <style name="Theme.MediaNote.EditText">

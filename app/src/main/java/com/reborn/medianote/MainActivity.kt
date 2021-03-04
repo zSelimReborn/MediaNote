@@ -3,32 +3,30 @@ package com.reborn.medianote
 import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Bundle
 import android.speech.SpeechRecognizer
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.*
+import android.widget.EditText
+import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.widget.addTextChangedListener
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.google.android.material.bottomappbar.BottomAppBar
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
-import com.google.mlkit.vision.text.Text
 import com.reborn.medianote.frontend.NoteGridAdapter
 import com.reborn.medianote.frontend.NoteViewModel
 import com.reborn.medianote.model.note.Note
 import com.reborn.medianote.model.note.NoteType
 import com.reborn.medianote.model.utils.PermissionsUtils
-import com.reborn.medianote.ocr.Recognizer
 import com.reborn.medianote.record.SpeechToText
 import java.io.File
 
@@ -41,7 +39,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private lateinit var recyclerView: RecyclerView
-    private lateinit var noNotesMessage: TextView
+    private lateinit var noNotesMessage: View
     private lateinit var bottomAppBar: BottomAppBar
 
     private lateinit var vm: NoteViewModel
@@ -75,7 +73,10 @@ class MainActivity : AppCompatActivity() {
                     newAudioNoteMenuClick()
                     true
                 }
-
+                R.id.deleteAllButton -> {
+                    deleteAllMenuClick()
+                    true
+                }
                 else -> super.onOptionsItemSelected(it)
             }
         }
@@ -99,6 +100,12 @@ class MainActivity : AppCompatActivity() {
 
         micOn()
         speechRecognizer.startListening()
+    }
+
+    private fun deleteAllMenuClick() {
+        vm.deleteAllNotes { notesRemoved -> Int
+            showMessage(R.string.deleted_notes_message, arrayOf(notesRemoved))
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -307,5 +314,12 @@ class MainActivity : AppCompatActivity() {
     private fun showMessage(res: Int) {
         val mainContent = findViewById<View>(android.R.id.content)
         Snackbar.make(mainContent, res, Snackbar.LENGTH_LONG).setAnchorView(bottomAppBar).show()
+    }
+
+    private fun showMessage(res: Int, parameters: Array<Any>) {
+        val mainContent = findViewById<View>(android.R.id.content)
+        val message = getString(res, *parameters)
+
+        Snackbar.make(mainContent, message, Snackbar.LENGTH_LONG).setAnchorView(bottomAppBar).show()
     }
 }

@@ -10,7 +10,7 @@
     <string name="mic_string">Microphone</string>
     <string name="search_note_hint">Search…</string>
 
-    <string name="no_notes_available">Wow… Such Empty</string>
+    <string name="no_notes_available">Wow… Such Empty\nTry one of the button below</string>
     <string name="menu_new_img_note">Image</string>
     <string name="menu_new_audio_note">Audio</string>
     <string name="new_note_title_input_hint">Title Note…</string>
@@ -30,4 +30,6 @@
     <string name="on_beginning_speech_text">Listening…</string>
     <string name="on_press_speech_text">Now you can speak</string>
     <string name="no_image_permissions_granted">You must grant all permissions.</string>
+    <string name="delete_all_notes_label">Delete all</string>
+    <string name="deleted_notes_message">Deleted %1$d notes</string>
 </resources>

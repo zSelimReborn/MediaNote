@@ -39,4 +39,11 @@ class NoteRepository (application: Application) {
     fun getById(id: Int) : LiveData<Note> {
         return noteDao.getById(id)
     }
+
+    fun deleteAllNotes(afterDelete: (Int) -> Unit) {
+        subscribeOnBackground {
+            val notesDeleted = noteDao.deleteAllNotes()
+            afterDelete(notesDeleted)
+        }
+    }
 }

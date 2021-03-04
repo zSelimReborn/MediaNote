@@ -17,4 +17,10 @@
         android:icon="@drawable/ic_microphone_off"
         app:showAsAction="ifRoom"
         />
+
+    <item
+        android:id="@+id/deleteAllButton"
+        android:orderInCategory="30"
+        android:title="@string/delete_all_notes_label"
+        app:showAsAction="never" />
 </menu>

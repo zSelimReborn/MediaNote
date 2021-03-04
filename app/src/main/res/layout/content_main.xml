@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/main_bg"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <LinearLayout
@@ -37,15 +38,32 @@
             app:layout_constraintTop_toBottomOf="@id/searchNoteInput"
             android:layout_marginTop="5dp"
             android:padding="10dp"
-
+            android:visibility="gone"
             android:scrollbars="vertical"/>
-        <TextView
+        <LinearLayout
             android:id="@+id/noNotesAvailable"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/notesListView"
-            android:visibility="gone"
-            android:text="@string/no_notes_available"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10sp"
+            android:paddingTop="10sp"
+            android:visibility="visible" >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="350sp"
+                app:layout_constraintTop_toBottomOf="@id/notesListView"
+                android:contentDescription="@string/no_notes_available"
+                android:src="@drawable/empty_bg"
             />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_notes_available"
+                android:gravity="center"
+                android:textSize="@dimen/grid_note_title_font_size"
+                android:textColor="@color/light_black"
+                android:layout_marginTop="10sp"
+            />
+        </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

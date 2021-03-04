@@ -20,4 +20,6 @@ interface INoteDao {
     @Query("SELECT * FROM notes WHERE id = :id")
     fun getById(id: Int) : LiveData<Note>
 
+    @Query("DELETE FROM notes")
+    fun deleteAllNotes() : Int
 }

@@ -14,6 +14,7 @@
     <color name="black">#FF000000</color>
     <color name="light_black">#222222</color>
     <color name="light_gray">#ECECEC</color>
+    <color name="main_bg">#FCFCFC</color>
     <color name="white">#FFFFFFFF</color>
 
     <color name="transparent">#00000000</color>
