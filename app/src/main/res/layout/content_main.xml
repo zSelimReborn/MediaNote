@@ -23,6 +23,12 @@
             android:layout_marginRight="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="10dp"
+            android:padding="15sp"
+            android:paddingLeft="10sp"
+            android:paddingStart="10sp"
+            android:paddingRight="10sp"
+            android:paddingEnd="10sp"
+            android:background="@drawable/input_border"
             />
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/notesListView"

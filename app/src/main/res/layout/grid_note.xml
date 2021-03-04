@@ -1,24 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="10dp"
+    android:paddingTop="@dimen/grid_note_padding_top"
+    android:paddingBottom="@dimen/grid_note_padding_bottom"
+    android:paddingLeft="@dimen/grid_note_padding_left"
+    android:paddingStart="@dimen/grid_note_padding_left"
+    android:paddingRight="@dimen/grid_note_padding_right"
+    android:paddingEnd="@dimen/grid_note_padding_right"
     android:layout_margin="5dp"
     android:background="@drawable/grid_item_border"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content" >
 
     <TextView
         android:id="@+id/gridNoteTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/grid_note_title_font_size"
+        android:textColor="@color/light_black"
     />
 
     <TextView
         android:id="@+id/gridNoteContent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/grid_note_content_margin_top"
         app:layout_constraintTop_toBottomOf="@id/gridNoteTitle"
+        android:textSize="@dimen/grid_note_content_font_size"
     />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

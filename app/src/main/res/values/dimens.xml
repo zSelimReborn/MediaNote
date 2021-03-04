@@ -1,3 +1,11 @@
 <resources>
-    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="grid_note_padding_top">15sp</dimen>
+    <dimen name="grid_note_padding_left">15sp</dimen>
+    <dimen name="grid_note_padding_right">15sp</dimen>
+    <dimen name="grid_note_padding_bottom">15sp</dimen>
+    <dimen name="grid_note_title_font_size">18sp</dimen>
+    <dimen name="grid_note_content_font_size">14sp</dimen>
+    <dimen name="grid_note_content_margin_top">20sp</dimen>
+
+    <dimen name="note_content_min_height">200sp</dimen>
 </resources>

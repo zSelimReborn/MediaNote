@@ -6,7 +6,7 @@
         android:id="@+id/newImgNote"
         android:orderInCategory="10"
         android:title="@string/menu_new_img_note"
-        android:icon="@android:drawable/ic_menu_camera"
+        android:icon="@drawable/ic_camera"
         app:showAsAction="ifRoom"
         />
 

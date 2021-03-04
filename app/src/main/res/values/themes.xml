@@ -26,5 +26,13 @@
 
     <style name="Theme.MediaNote.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="Theme.MediaNote.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.MediaNote.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="menu">@color/light_black</item>
+    </style>
+
+    <style name="Theme.MediaNote.EditText">
+        <item name="colorControlNormal">@color/light_black</item>
+        <item name="colorControlActivated">@color/light_black</item>
+        <item name="colorControlHighlight">@color/light_black</item>
+    </style>
 </resources>

@@ -45,8 +45,11 @@ class NoteGridAdapter (
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.noteTitle.text = dataSet[position].title
 
-        val postContent = dataSet[position].content
-        holder.noteContent.text = postContent.substring(0, postContent.length.coerceAtMost(150)).plus("...")
+        var postContent = dataSet[position].content
+        if (postContent.length > 150) {
+            postContent = postContent.substring(0, postContent.length.coerceAtMost(150)).plus("...")
+        }
+        holder.noteContent.text = postContent
     }
 
     fun getNoteAt(position: Int) : Note {

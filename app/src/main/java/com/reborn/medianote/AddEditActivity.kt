@@ -6,6 +6,7 @@ import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.app.Activity
 import android.content.Intent
+import android.graphics.Color
 import android.graphics.Point
 import android.graphics.Rect
 import android.graphics.RectF
@@ -18,6 +19,7 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.google.mlkit.vision.text.Text
 import com.reborn.medianote.model.note.NoteType
 import com.reborn.medianote.model.utils.URIUtils
@@ -338,6 +340,7 @@ class AddEditActivity : AppCompatActivity() {
                 }
             })
             start()
+            noteImageViewExpanded.setBackgroundResource(R.color.light_black)
         }
 
         // Upon clicking the zoomed-in image, it should zoom back down
@@ -345,6 +348,7 @@ class AddEditActivity : AppCompatActivity() {
         // the expanded image.
         expandedImageView.setOnClickListener {
             currentAnimator?.cancel()
+            noteImageViewExpanded.setBackgroundResource(R.color.transparent)
 
             // Animate the four positioning/sizing properties in parallel,
             // back to their original values.
