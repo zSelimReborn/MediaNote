@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Media Note</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="btn_speak">Speak</string>
+
+    <string name="mic_string">Microphone</string>
+    <string name="search_note_hint">Search…</string>
+
+    <string name="no_notes_available">Wow… Such Empty</string>
+    <string name="menu_new_img_note">Image</string>
+    <string name="menu_new_audio_note">Audio</string>
+    <string name="new_note_title_input_hint">Title Note…</string>
+    <string name="new_note_content_input_hint">Content Note…</string>
+    <string name="title_activity_add_edit">New Note</string>
+    <string name="save_note_button_label">Save</string>
+    <string name="delete_note_button_label">Delete</string>
+    <string name="add_note_activity_title">New Note</string>
+    <string name="edit_note_activity_title">Edit Note</string>
+    <string name="no_title_or_content_error">Please insert title and content</string>
+    <string name="no_note_saving_message">No changes</string>
+    <string name="add_note_success_message">Note added</string>
+    <string name="edit_note_success_message">Note edited</string>
+    <string name="delete_note_success_message">Note deleted</string>
+    <string name="label_image_chooser">Select an image</string>
+    <string name="image_recognition_error">Impossible to retrieve text from image.</string>
+    <string name="on_beginning_speech_text">Listening…</string>
+    <string name="on_press_speech_text">Now you can speak</string>
+    <string name="no_image_permissions_granted">You must grant all permissions.</string>
+</resources>

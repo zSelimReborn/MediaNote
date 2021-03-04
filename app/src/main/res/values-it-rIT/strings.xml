@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Media Note</string>
+    <string name="action_settings">Impostazioni</string>
+
+    <string name="next">Prossimo</string>
+    <string name="previous">Precedente</string>
+
+    <string name="btn_speak">Parla</string>
+    <string name="mic_string">Microphone</string>
+
+    <string name="search_note_hint">Cerca…</string>
+    <string name="no_notes_available">Il silenzio è d\'oro…</string>
+    <string name="menu_new_img_note">Immagine</string>
+    <string name="menu_new_audio_note">Audio</string>
+    <string name="new_note_title_input_hint">Titolo Nota…</string>
+    <string name="new_note_content_input_hint">Contenuto Nota…</string>
+    <string name="title_activity_add_edit">New Note</string>
+    <string name="save_note_button_label">Salva</string>
+    <string name="delete_note_button_label">Cancella</string>
+    <string name="add_note_activity_title">Nuova Nota</string>
+    <string name="edit_note_activity_title">Modifica Nota</string>
+    <string name="no_title_or_content_error">Perfavore inserisci titolo e contenuto</string>
+    <string name="no_note_saving_message">Nessuna modifica applicata</string>
+    <string name="add_note_success_message">Nota aggiunta</string>
+    <string name="edit_note_success_message">Nota modificata</string>
+    <string name="delete_note_success_message">Nota eliminata</string>
+    <string name="label_image_chooser">Seleziona un\'immagine</string>
+    <string name="image_recognition_error">Impossibile riconoscere testo dall\'immagine</string>
+    <string name="on_beginning_speech_text">In ascolto…</string>
+    <string name="on_press_speech_text">Ora puoi parlare</string>
+    <string name="no_image_permissions_granted">Devi abilitare tutti i permessi richiesti.</string>
+</resources>
